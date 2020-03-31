@@ -1,0 +1,21 @@
+# 配置文件
+conf/conf.toml
+fileSev/conf.toml
+
+# 日志文件
+/log
+*.log
+
+# 下载的文件
+/download
+
+# 程序二进制文件
+/bin
+/fileSev/bin
+
+# 测试文件
+
+# db数据
+/data/
+
+.idea/

@@ -1,0 +1,1 @@
+ nohup bin/crawler conf/conf.toml > crawler.log 2>&1 &

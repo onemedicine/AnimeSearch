@@ -1,0 +1,28 @@
+# 配置模版，正式去掉后缀template
+
+HttpAddr       = "127.0.0.1:12345"    # 服务器地址
+UpdateDur      = 600                  # 日更新爬取时间间隔,单位秒
+SearchDur      = 24                   # 搜索爬取时间间隔,单位小时
+
+[Log]
+LogPath        = "./log"              # 日志输出路径
+LogName        = "crawler"            # 日志名字
+
+[Web]
+PageItemCount  = 20                   # 每页显示的项目数量，搜索
+
+[DB]
+CacheSize      = 1024                 # 缓存中保留的数据容量大小
+DBSaveDur      = 60                   # 缓存数据落地时间间隔
+SavePath       = "./data"          # json文本存储地址
+MySQLAddr      = ""                   # mysql数据库地址，暂不使用
+
+[Download]
+OutPath        = "./download"         # 下载路径
+QueueSize      = 256                  # 下载队列大小
+GoroutineCount = 2                    # 下载队列的处理线程数
+
+[Analysis]
+QueueSize      = 1024                 # 分析器队列大小
+GoroutineCount = 2                    # 分析器队列的处理线程数
+
